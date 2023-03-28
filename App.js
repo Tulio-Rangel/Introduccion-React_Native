@@ -6,13 +6,15 @@ import Saludar from "./src/components/Saludar";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hola Mundo</Text>
-      <Saludar name="Tulio" lastname="Rangel" />
-      <Saludar name="Laura" />
-      <Saludar name="Mafe" />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Hola Mundo</Text>
+        <Saludar name="Tulio" lastname="Rangel" />
+        <Saludar name="Laura" />
+        <Saludar name="Mafe" />
+        <StatusBar style="auto" />
+      </View>
+    </NavigationContainer>
   );
 }
 
