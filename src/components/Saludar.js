@@ -6,3 +6,12 @@ export default function Saludar(props) {
 
   return <Text>Hola que tal {name} </Text>;
 }
+
+/**
+ * Una forma mas simple de pasarle la propiedad
+ * import { Text } from 'react-native'
+ * const Saludar = ({ name = 'default name' }) => {
+	return <Text> Hola {name}</Text>
+    }
+ * export default Saludar
+ */
