@@ -1,19 +1,12 @@
 import "react-native-gesture-handler";
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import Saludar from "./src/components/Saludar";
+import NavigationStack from "./src/navigation/NavigationStack";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Hola Mundo</Text>
-        <Saludar name="Tulio" lastname="Rangel" />
-        <Saludar name="Laura" />
-        <Saludar name="Mafe" />
-        <StatusBar style="auto" />
-      </View>
+      <NavigationStack />
     </NavigationContainer>
   );
 }
