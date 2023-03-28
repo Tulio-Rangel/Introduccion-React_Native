@@ -1,10 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import Saludar from "./src/components/Saludar";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola Device</Text>
+      <Text>Hola Mundo</Text>
+      <Saludar name="Tulio" />
+      <Saludar name="Laura" />
+      <Saludar name="Mafe" />
       <StatusBar style="auto" />
     </View>
   );
