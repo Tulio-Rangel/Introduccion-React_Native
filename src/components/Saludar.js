@@ -2,16 +2,20 @@ import React from "react";
 import { Text } from "react-native";
 
 export default function Saludar(props) {
-  const { name } = props;
+  const { name, lastname } = props;
 
-  return <Text>Hola que tal {name} </Text>;
+  return (
+    <Text>
+      Hola que tal {name} {lastname}
+    </Text>
+  );
 }
 
 //Forma con defaultProps
-// Saludar.defaultProps = {
-//   firstname: "Agustin",
-//   lastname: "Navarro Galdon",
-// };
+Saludar.defaultProps = {
+  firstname: "John",
+  lastname: "Doe",
+};
 
 /**
  * Una forma mas simple de pasarle la propiedad

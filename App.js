@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hola Mundo</Text>
-      <Saludar name="Tulio" />
+      <Saludar name="Tulio" lastname="Rangel" />
       <Saludar name="Laura" />
       <Saludar name="Mafe" />
       <StatusBar style="auto" />
