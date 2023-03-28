@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
+import PropTypes from "prop-types";
 
 export default function Saludar(props) {
   const { name, lastname } = props;
@@ -25,3 +26,9 @@ Saludar.defaultProps = {
     }
  * export default Saludar
  */
+
+//PropTypes que es para poner si es req uerido o no un campo... Creo
+Saludar.propTypes = {
+  name: PropTypes.string.isRequired,
+  lastname: PropTypes.string,
+};
